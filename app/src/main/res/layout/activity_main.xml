@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/prim">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BMI Calculator"
+    android:fontFamily="@font/cursive"
+    android:textColor="@color/white"
+    android:textSize="40dp"
+    android:id="@+id/bmi"/>
+   <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Weight in Kg"
+       android:textColor="@color/black"
+       android:background="@color/outline"
+           android:id="@+id/weight"
+       android:inputType="numberDecimal"
+       android:drawableLeft="@drawable/baseline_monitor_weight_24"
+       android:padding="10dp"
+       android:layout_margin="20dp"/>
+
+  <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Height in CM"
+            android:id="@+id/height"
+            android:background="@color/outline"
+      android:textColor="@color/black"
+      android:drawableLeft="@drawable/baseline_info_24"
+      android:inputType="numberDecimal"
+      android:padding="10dp"
+      android:layout_margin="20dp"/>
+
+    <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Submit"
+        android:textColor="@color/white"
+       android:id="@+id/btnsub"
+        android:backgroundTint="@color/black"
+        android:drawableLeft="@drawable/baseline_subdirectory_arrow_right_24"/>
+</LinearLayout>
